@@ -1,0 +1,11 @@
+E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\bin\Debug\HtmlProcessing.exe.config
+E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\bin\Debug\HtmlProcessing.exe
+E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\bin\Debug\HtmlProcessing.pdb
+E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\bin\Debug\HtmlAgilityPack.dll
+E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\bin\Debug\HtmlAgilityPack.pdb
+E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\bin\Debug\HtmlAgilityPack.xml
+E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\obj\Debug\HtmlProcessing.csprojAssemblyReference.cache
+E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\obj\Debug\HtmlProcessing.csproj.CoreCompileInputs.cache
+E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\obj\Debug\HtmlProcessing.csproj.CopyComplete
+E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\obj\Debug\HtmlProcessing.exe
+E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\obj\Debug\HtmlProcessing.pdb
