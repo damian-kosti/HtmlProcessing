@@ -9,3 +9,14 @@ E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\obj\Debug\HtmlProcessing.csproj.Core
 E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\obj\Debug\HtmlProcessing.csproj.CopyComplete
 E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\obj\Debug\HtmlProcessing.exe
 E:\NOTATKI\SI\HtmlProcessing\HtmlProcessing\obj\Debug\HtmlProcessing.pdb
+D:\Development\HtmlProcessing\HtmlProcessing\HtmlProcessing\bin\Debug\HtmlProcessing.exe.config
+D:\Development\HtmlProcessing\HtmlProcessing\HtmlProcessing\bin\Debug\HtmlProcessing.exe
+D:\Development\HtmlProcessing\HtmlProcessing\HtmlProcessing\bin\Debug\HtmlProcessing.pdb
+D:\Development\HtmlProcessing\HtmlProcessing\HtmlProcessing\bin\Debug\HtmlAgilityPack.dll
+D:\Development\HtmlProcessing\HtmlProcessing\HtmlProcessing\bin\Debug\HtmlAgilityPack.pdb
+D:\Development\HtmlProcessing\HtmlProcessing\HtmlProcessing\bin\Debug\HtmlAgilityPack.xml
+D:\Development\HtmlProcessing\HtmlProcessing\HtmlProcessing\obj\Debug\HtmlProcessing.csprojAssemblyReference.cache
+D:\Development\HtmlProcessing\HtmlProcessing\HtmlProcessing\obj\Debug\HtmlProcessing.csproj.CoreCompileInputs.cache
+D:\Development\HtmlProcessing\HtmlProcessing\HtmlProcessing\obj\Debug\HtmlProcessing.csproj.CopyComplete
+D:\Development\HtmlProcessing\HtmlProcessing\HtmlProcessing\obj\Debug\HtmlProcessing.exe
+D:\Development\HtmlProcessing\HtmlProcessing\HtmlProcessing\obj\Debug\HtmlProcessing.pdb

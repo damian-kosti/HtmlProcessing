@@ -12,11 +12,12 @@ namespace HtmlProcessing
         static void Main(string[] args)
         {
 
-            var productList = ProductManager.GetProducts();
-
-            foreach (var product in productList)
+            List<int> productIdList = ProductManager.GetProducts();
+            
+            foreach (var product in productIdList)
             {
-
+                var opinions = OpinionManager.GetOpinions(product);
+                
             }
 
         }

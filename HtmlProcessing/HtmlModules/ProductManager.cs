@@ -21,24 +21,22 @@ namespace HtmlProcessing.HtmlModules
             var productList = new List<int>();
             try
             {
-                var currentPage = GetPage(minPageNumber);
+                HtmlDocument currentPage = GetPage(minPageNumber);
 
-                var pagination = currentPage.DocumentNode.SelectSingleNode("//div[@class=\"pagination-top\"]");
-                var input = pagination.SelectSingleNode(".//input");
-                var maxPageNumber = input.GetAttributeValue("data-pageCount", 0) - 1;
-
-                var currentPageNumber = minPageNumber;
+                HtmlNode pagination = currentPage.DocumentNode.SelectSingleNode("//div[@class=\"pagination-top\"]");
+                HtmlNode input = pagination.SelectSingleNode(".//input");
+                int maxPageNumber = input.GetAttributeValue("data-pageCount", 0) - 1;
+                int currentPageNumber = minPageNumber;
                 while (currentPageNumber < maxPageNumber)
                 {
-
                     Thread.Sleep(5000);
                     currentPage = GetPage(currentPageNumber);
-                    var productsContainer = currentPage.DocumentNode.SelectSingleNode("//div[@class=\"category-list-body js_category-list-body js_search-results\"]");
-                    var products = productsContainer.SelectNodes("//div");
+                    HtmlNode productsContainer = currentPage.DocumentNode.SelectSingleNode("//div[@class=\"category-list-body js_category-list-body js_search-results\"]");
+                    HtmlNodeCollection products = productsContainer.SelectNodes("//div");
 
                     foreach (var p in products)
                     {
-                        var productId = p.GetAttributeValue("data-pid", 0);
+                        int productId = p.GetAttributeValue("data-pid", 0);
                         if (productId > 0 && !productList.Contains(productId))
                         {
                             productList.Add(productId);
