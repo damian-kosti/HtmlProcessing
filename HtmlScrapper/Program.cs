@@ -1,11 +1,11 @@
-﻿using HtmlProcessing.HtmlModules;
+﻿using HtmlScrapper.HtmlModules;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HtmlProcessing
+namespace HtmlScrapper
 {
     class Program
     {
@@ -17,9 +17,12 @@ namespace HtmlProcessing
             foreach (var product in productIdList)
             {
                 var opinions = OpinionManager.GetOpinions(product);
-                
+                foreach(var opinion in opinions)
+                {
+                    Console.WriteLine(opinion.InnerText);
+                }
             }
-
+            
         }
     }
 }

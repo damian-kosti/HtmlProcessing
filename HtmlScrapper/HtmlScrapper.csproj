@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extractors\MarkExtractor.cs" />
+    <Compile Include="Extractors\ReviewExtractor.cs" />
     <Compile Include="HtmlModules\OpinionManager.cs" />
     <Compile Include="HtmlModules\ProductManager.cs" />
     <Compile Include="Program.cs" />

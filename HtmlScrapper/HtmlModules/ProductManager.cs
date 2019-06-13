@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using HtmlAgilityPack;
 
-namespace HtmlProcessing.HtmlModules
+namespace HtmlScrapper.HtmlModules
 {
     static class ProductManager
     {
