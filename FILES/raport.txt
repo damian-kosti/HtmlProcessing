@@ -1,0 +1,34 @@
+1. Pozyskiwanie danych
+    Dane zostały pobrane z serwisu Ceneo.pl. Ze względu na mechanizm antybotowy serwisu Ceneo pozyskano tylko 3 strony produktów.
+
+    Pobrano:
+        9397 opinii o tabletach
+        2180 opinii o monitorach
+
+2. Mechanizm przewidujący
+  a) zbiór uczący składający się z 9397 opinii o tabletach
+  b) cechy:
+        ilość pozytywnych przymiotników użytych w opinii
+        ilość negatywnych przymiotników użytych w opinii
+        długość opinii
+        ilość wypisanych zalet (w punktach)
+        ilość wypisanych wad (w punktach)
+  c) Lista przymiotników została pobrana z portalu https://synonim.net/synonim/
+        Do stworzenia listy pozytywnych przymiotników użyto synonimów słów "dobry", "fajny", "pozytywny"
+        Do stworzenia listy negatywnych przymiotników użyto synonimów słów "zły", "słaby", "negatywny"
+
+3. Przebieg działania
+  1) pobranie listy produktów z danej kategorii
+  2) pobranie listy opinii dla każdego produktu (razem z oceną)
+  3) usunięcie znaków specjalnych z tekstu opinii '.', ',', ';', '=', '-', '+', '!', '?'
+  4) liczenie pozytywnych i negatywnych słów przy użyciu odpowiednich kolekcji oraz algorytmu Levensteina
+  5) liczenie długości opinii
+  6) liczenie ilości wad i zalet z wypunktowanej listy
+
+4. Ewaluacja
+  a) Ewaluacji dokonano na zbiorze 2180 opinii o monitorach
+  b) Średnia róznica pomiędzy rzeczywistymi ocenami, a ocenami wystawionymi przez SI
+    wynosi 0,7902938376
+
+5. Wnioski
+  a) predykcja ocen była wyższa dla pozytywnych ocen

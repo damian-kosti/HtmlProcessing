@@ -1,0 +1,33 @@
+➜  Downloads vw -f comments.model tablety.txt
+final_regressor = comments.model
+Num weight bits = 18
+learning rate = 0.5
+initial_t = 0
+power_t = 0.5
+using no cache
+Reading datafile = tablety.txt
+num sources = 1
+average  since         example        example  current  current  current
+loss     last          counter         weight    label  predict features
+25.000000 25.000000            1            1.0   5.0000   0.0000        4
+18.460004 11.920009            2            2.0   4.0000   0.5475        3
+15.705547 12.951090            4            4.0   5.0000   1.8438        4
+14.023581 12.341615            8            8.0   5.0000   1.6434        3
+10.514039 7.004497           16           16.0   5.0000   1.6049        2
+7.676075 4.838110           32           32.0   5.0000   3.2600        4
+5.234978 2.793881           64           64.0   4.0000   3.8388        3
+3.585141 1.935305          128          128.0   5.0000   3.0163        2
+2.419574 1.254006          256          256.0   5.0000   4.8207        5
+1.575438 0.731303          512          512.0   5.0000   4.5197        3
+1.379591 1.183744         1024         1024.0   5.0000   4.8178        4
+1.023966 0.668342         2048         2048.0   5.0000   4.2618        3
+0.730415 0.436864         4096         4096.0   4.0000   3.9616        3
+0.572277 0.414138         8192         8192.0   5.0000   4.6415        6
+ 
+finished run
+number of examples = 9397
+weighted example sum = 9397.000000
+weighted label sum = 41635.000000
+average loss = 0.629804
+best constant = 4.430669
+total feature number = 35451
