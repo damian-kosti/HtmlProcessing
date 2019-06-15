@@ -1,3 +1,10 @@
+GRUPA:
+Damian Kostrzewa
+Tomasz Lis
+
+link do github: https://github.com/damian-kosti/HtmlScrapper
+
+
 1. Pozyskiwanie danych
     Dane zostały pobrane z serwisu Ceneo.pl. Ze względu na mechanizm antybotowy serwisu Ceneo pozyskano tylko 3 strony produktów.
 
