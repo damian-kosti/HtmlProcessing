@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{385705E0-2A77-40D8-AF77-A2DDA186C7F6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HtmlProcessing</RootNamespace>
-    <AssemblyName>HtmlProcessing</AssemblyName>
+    <RootNamespace>HtmlScrapper</RootNamespace>
+    <AssemblyName>HtmlScrapper</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>HtmlScrapper.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="HtmlAgilityPack, Version=1.11.7.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\packages\HtmlAgilityPack.1.11.7\lib\Net45\HtmlAgilityPack.dll</HintPath>
@@ -47,16 +50,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adjectives.cs" />
     <Compile Include="Extractors\MarkExtractor.cs" />
     <Compile Include="Extractors\ReviewExtractor.cs" />
     <Compile Include="HtmlModules\OpinionManager.cs" />
     <Compile Include="HtmlModules\ProductManager.cs" />
+    <Compile Include="ProcessingModules\ProsConsCounter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProcessingModules\OpinionProcessor.cs" />
+    <Compile Include="Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -31,6 +31,7 @@ namespace HtmlScrapper.HtmlModules
 
                 while (currentPageNumber <= maxPageNumber)
                 {
+                    Console.WriteLine("Getting opinions - current page " + currentPageNumber.ToString() + " of " + maxPageNumber.ToString());
                     Thread.Sleep(5000);
                     currentPage = GetPage(productId, currentPageNumber);
                     HtmlNode opinionContainer = currentPage.DocumentNode.SelectSingleNode("//ol[@class=\"product-reviews js_product-reviews js_reviews-hook js_product-reviews-container\"]");
@@ -43,8 +44,9 @@ namespace HtmlScrapper.HtmlModules
                     currentPageNumber++;
                 }
             }
-            catch
+            catch(Exception e)
             {
+                Console.WriteLine(e.Message);
                 return opinionList;
             }
             return opinionList;

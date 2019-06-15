@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using HtmlAgilityPack;
 
-namespace HtmlProcessing.Extractors
+namespace HtmlScrapper.Extractors
 {
-    class ReviewExtractor
+    static class ReviewExtractor
     {
         public static string GetReview(HtmlNode opinion)
         {
@@ -16,8 +16,7 @@ namespace HtmlProcessing.Extractors
             string reviewText = string.Empty;
             if(review != null)
             {
-                reviewText = review.InnerText;
-                
+                reviewText = review.InnerText;                
             }
 
             return reviewText;

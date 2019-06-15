@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HtmlAgilityPack;
 
-namespace HtmlProcessing.Extractors
+namespace HtmlScrapper.Extractors
 {
     class MarkExtractor
     {

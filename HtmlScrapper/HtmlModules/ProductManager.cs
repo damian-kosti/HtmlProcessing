@@ -29,6 +29,7 @@ namespace HtmlScrapper.HtmlModules
                 int currentPageNumber = minPageNumber;
                 while (currentPageNumber < maxPageNumber)
                 {
+                    Console.WriteLine("Getting products - current page " + currentPageNumber.ToString() + " of " + maxPageNumber.ToString());
                     Thread.Sleep(5000);
                     currentPage = GetPage(currentPageNumber);
                     HtmlNode productsContainer = currentPage.DocumentNode.SelectSingleNode("//div[@class=\"category-list-body js_category-list-body js_search-results\"]");
@@ -45,8 +46,9 @@ namespace HtmlScrapper.HtmlModules
                     currentPageNumber++;
                 }
             }
-            catch
+            catch(Exception e)
             {
+                Console.WriteLine(e.Message);
                 return productList;
             }               
 
